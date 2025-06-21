@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+
+<div th:if="${failed}">
+
+<h1 style="color:red;" th:text="${failed}"></h1>
+
+</div>
+
+
+
+
+<form th:action="@{/logForm}" th:object="${student}" method="post">
+
+  
+    Email_Id :<input type="email" name="email" th:field="*{email}"/>  </br></br>
+     Password :<input type="password" name="pass" th:field="*{password}"/>  </br></br>
+    
+      
+      <input type="submit" value="Login">
+
+</form>
+
+</br></br>
+
+<a href="index.html">Home Page</a>
+</body>
+</html>
