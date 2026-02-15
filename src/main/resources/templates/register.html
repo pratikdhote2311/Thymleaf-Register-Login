@@ -27,6 +27,8 @@
 
 <form th:action="@{/regForm}" th:object="${student}" method="post">
 
+    
+    <h1>I am just checking Branch</h1>
    Name :<input type="text" name="name" th:field="*{name}"/>  </br></br>
     Email_Id :<input type="email" name="email" th:field="*{email}"/>  </br></br>
      Password :<input type="password" name="pass" th:field="*{password}"/>  </br></br>
